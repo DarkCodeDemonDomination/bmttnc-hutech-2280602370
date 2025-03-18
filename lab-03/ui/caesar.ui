@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CaesarCipher</class>
- <widget class="QMainWindow" name="CaesarCipher">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -47,7 +47,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Plan_text:</string>
+     <string>Plaintext:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -83,30 +83,20 @@
      </font>
     </property>
     <property name="text">
-     <string>Cipher_text:</string>
+     <string>Ciphertext:</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="txt_plantext">
+   <widget class="QTextEdit" name="txt_plain_text">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>150</y>
+      <x>170</x>
+      <y>140</y>
       <width>511</width>
       <height>87</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="txt_key">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>250</y>
-      <width>511</width>
-      <height>87</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="txt_ciphertext">
+   <widget class="QTextEdit" name="txt_cipher_text">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -116,7 +106,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_en">
+   <widget class="QPushButton" name="btn_encrypt">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -134,7 +124,7 @@
      <string>Encrypt</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_de">
+   <widget class="QPushButton" name="btn_decrypt">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -150,6 +140,16 @@
     </property>
     <property name="text">
      <string>Decrypt</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_key">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>280</y>
+      <width>511</width>
+      <height>22</height>
+     </rect>
     </property>
    </widget>
   </widget>
